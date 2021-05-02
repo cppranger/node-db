@@ -1,0 +1,31 @@
+CREATE TABLE users (
+       id int NOT NULL PRIMARY KEY,         // ye, auto-incremented is better, but i forgot make it one
+       firstName varchar(20),               // and yes, i tried to alter it, but mysql didnt wanna do it, so whatevs
+       lastName varchar(20),
+       email varchar(20),
+       reg_data datetime DEFAULT Now()
+       );
+
+INSERT INTO users (
+    id, firstName, lastName, email
+    ) VALUES (
+    1, "Anatoly", "Petrushkin", "apetrukha@mail.ru"
+    );
+
+INSERT INTO users (
+    id, firstName, lastName, email
+    ) VALUES (
+    2, "Ksenia", "Goroshko", "goroch_xenia@mail.ru"
+    );
+
+INSERT INTO users (
+    id, firstName, lastName, email
+    ) VALUES (
+    3, "Vasilisa", "Petrova", "vasyapyotr@mail.ru"
+    );
+
+INSERT INTO users (
+    id, firstName, lastName, email
+    ) VALUES (
+    4, "Pyotr", "Morkva", "morkva_petro@mail.ru"
+    );
